@@ -1,0 +1,98 @@
+[{
+  "_id": {
+    "$oid": "641af31001af4658ad4cdcf0"
+  },
+  "title": "Как найти свою первую работу",
+  "author": "HRКотик",
+  "preview": "previews/preview1.jpg",
+  "likes": 100
+},{
+  "_id": {
+    "$oid": "641af31001af4658ad4cdcf1"
+  },
+  "title": "Каждый месяц живу в новом городе",
+  "author": "Обезьянка-Путешественница",
+  "preview": "previews/preview2.jpg",
+  "likes": 300
+},{
+  "_id": {
+    "$oid": "641af31001af4658ad4cdcf2"
+  },
+  "title": "Топ 10 бесплатных ресурсов для изучения JS",
+  "author": "Обезьянка-Путешественница",
+  "preview": "previews/preview3.jpg",
+  "likes": 50
+},{
+  "_id": {
+    "$oid": "641af31001af4658ad4cdcf3"
+  },
+  "title": "Как правильно презентовать свой проект",
+  "author": "Js и Рамен",
+  "preview": "previews/preview4.jpg",
+  "likes": 0
+},{
+  "_id": {
+    "$oid": "641af31001af4658ad4cdcf4"
+  },
+  "title": "Утро айтишника",
+  "author": "HRКотик",
+  "preview": "previews/preview5.jpg",
+  "likes": 20
+},{
+  "_id": {
+    "$oid": "641af31001af4658ad4cdcf5"
+  },
+  "title": "Сложности командной работы",
+  "author": "Js и Рамен",
+  "preview": "previews/preview6.jpg",
+  "likes": 80
+},{
+  "_id": {
+    "$oid": "641af31001af4658ad4cdcf6"
+  },
+  "title": "Машинный код - кому и зачем он нужен?",
+  "author": "Сисадмин",
+  "preview": "previews/preview7.jpg",
+  "likes": 99
+},{
+  "_id": {
+    "$oid": "641af31001af4658ad4cdcf7"
+  },
+  "title": "Идеальный стек для веб-разработки",
+  "author": "Годный контент",
+  "preview": "previews/preview8.jpg",
+  "likes": 1000
+},{
+  "_id": {
+    "$oid": "641af31001af4658ad4cdcf8"
+  },
+  "title": "Выбираем монитор",
+  "author": "Годный контент",
+  "preview": "previews/preview9.jpg",
+  "likes": 500
+},{
+  "_id": {
+    "$oid": "641af31001af4658ad4cdcf9"
+  },
+  "title": "Конференция по безопасности данных",
+  "author": "Годный контент",
+  "preview": "previews/preview10.jpg",
+  "likes": 150
+},{
+  "_id": {
+    "$oid": "641af31001af4658ad4cdcfa"
+  },
+  "title": "Основы git",
+  "author": "Годный контент",
+  "preview": "previews/preview11.jpg",
+  "likes": 200,
+  "youtube": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/j2F77U-2FuQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+},{
+  "_id": {
+    "$oid": "641af31001af4658ad4cdcfb"
+  },
+  "title": "Баги: как найти и починить",
+  "author": "Годный контент",
+  "preview": "previews/preview12.jpg",
+  "likes": 400
+}]

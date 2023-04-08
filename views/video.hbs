@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itube</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <span class="fs-4">ITube</span>
+            </a>
+        </header>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 col-lg-8 mb-3">
+                    <h3 class="fw-bold lh-1 mb-3">
+                        {{video.title}}
+                    </h3>
+                    
+                    {{#if video.youtube}}
+                    {{{ video.youtube}}}
+                    {{else}}
+                    <img src="{{video.preview}}" class="d-block img-fluid  mb-3" loading="lazy">
+                    {{/if}}
+                    
+                  
+                    <div class="lead d-flex justify-content-between">
+                        <div>
+                            by
+                            <a href="/blogger?username={{this.author}}" class="card-link video-author">
+                                {{video.author}}
+                            </a>
+                        </div>
+
+                        <div class="likes">
+                            {{video.likes}}
+                            <img src="icons/heart-fill.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                {{!-- Другие видео этого блогера--}}
+                
+                <div class="col-12 col-lg-4 mb-3">
+                    <h3>Другие видео: </h3>
+                    {{#each array}}
+                    {{!-- Видео --}}
+                    <div class="card mb-3">
+                        <img src="{{this.preview}}" class="video-preview" loading="lazy">
+                        <div class="card-footer text-muted">
+                            <h5 class="card-title">
+                                <a href="/video?id={{this._id}}" class="card-link video-title">
+                                    {{this.title}}
+                                </a>
+                            </h5>
+                            <div class="d-flex justify-content-between">
+                                <a href="/blogger?username={{this.author}}" class="card-link video-author">
+                                    {{this.author}}
+                                </a>
+                                <div>
+                                    {{this.likes}}
+                                    <img src="icons/heart-fill.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
